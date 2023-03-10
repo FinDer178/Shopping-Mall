@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content=""width=device-width, initial-scale=1.0">
+        <title>우리들의 옷장 클로짓</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css.css">
+        <script src="https://kit.fontawesome.com/617c23a095.js" 
+        crossorigin="anonymous"></script>
+        <link 
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" 
+        rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    </head>
+    <body>
+        <div class="header">
+
+        
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><i class="fas fa-fire-alt"></i></a>
+                    <a href="">Closet</a>
+                </div>
+           
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="account.html">Sign up</a></li>
+                    <li><a href="">관리자</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon"
+            onclick="menutoggle()">
+        </div>
+        
+    </div>
+    </div>
+
+<div class="board_wrap">
+    <div class="board_title">
+        <strong>공지사항</strong>
+        <p>여기는 자유로운 소통공간입니다.</p>
+    </div>
+    <div class="board_list_wrap">
+        <div class="board_list">
+            <div class="top">
+                <div class="num">번호</div>
+                <div class="title">제목</div>
+                <div class="writer">글쓴이</div>
+                <div class="date">작성일</div>
+                <div class="count">조회</div>
+            </div>
+            <div>
+                <div class="num">4</div>
+                <div class="title"><a href="#">옷 반품해주세요</a></div>
+                <div class="writer">이수용</div>
+                <div class="date">2021.06.13</div>
+                <div class="count">4</div>
+            </div>
+            <div>
+                <div class="num">3</div>
+                <div class="title"><a href="#">옷 반품해주세요</a></div>
+                <div class="writer">이수용</div>
+                <div class="date">2021.06.13</div>
+                <div class="count">4</div>
+            </div>
+            <div>
+                <div class="num">2</div>
+                <div class="title"><a href="#"></a>옷 반품해주세요</div>
+                <div class="writer">이수용</div>
+                <div class="date">2021.06.13</div>
+                <div class="count">4</div>
+            </div>
+            <div>
+                <div class="num">1</div>
+                <div class="title"><a href="#">옷 반품해주세요</a></div>
+                <div class="writer">이수용</div>
+                <div class="date">2021.06.13</div>
+                <div class="count">4</div>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </div>
+        <div class="board_page">
+
+        </div>
+        <div class="bt_wrap">
+            <a href="#" class="on">목록</a>
+            <a href="#">수정</a>
+        </div>
+    </div>
+</div>
+    
+
+
+
+<!-----------footer---------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download App for Andriod and ios Mobile Phone.</p>
+                <div class="app-logo">
+                    <img src="images/app-store.png">
+                    <img src="images/play-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                Our Purpose
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+
+            </div>
+
+
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021 By Su-Young Lee</p>
+    </hr>
+    </div>
+</div>
+<!----------js for toggle menu------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight ="200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+</script>
+</body>
+</html>

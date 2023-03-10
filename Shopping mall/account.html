@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content=""width=device-width, initial-scale=1.0">
+        <title>모든 상품들</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/617c23a095.js" 
+        crossorigin="anonymous"></script>
+        <link 
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" 
+        rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    </head>
+    <body>
+
+
+        
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <i class="fas fa-fire-alt"></i>
+                    <a href="">Closet</a>
+                </div>
+           
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Sign up</a></li>
+                    <li><a href="">관리자</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon"
+            onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!--------account page------>
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <<div class="col-2">
+                    <h2><strong>안녕하세요:)</strong></h2>
+                    <h2><strong>클로짓에 오신걸 환영합니다.</strong><h2>
+                    <br>
+                </div>
+
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">로그인</span>
+                            <span onclick="register()">회원가입</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="text" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forget password?</a>
+                        </form>
+
+                        <form id="RegForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+<!-----------footer---------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download App for Andriod and ios Mobile Phone.</p>
+                <div class="app-logo">
+                    <img src="images/app-store.png">
+                    <img src="images/play-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                Our Purpose
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+
+            </div>
+
+
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021 By Su-Young Lee</p>
+    </hr>
+    </div>
+</div>
+<!----------js for toggle menu------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight ="200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+</script>
+
+<!-------js for toggle form------->
+<script>
+    
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register(){
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translate(100px)";
+    }
+
+    function login(){
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+    }
+</script>
+</body>
+</html>
